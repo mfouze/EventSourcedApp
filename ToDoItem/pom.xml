@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>fr.uvsq.dataScale</groupId>
-	<artifactId>EventSourcedApp</artifactId>
+	<artifactId>ToDoItem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>EventSourcedApp</name>
+	<name>ToDoItem</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -23,12 +23,14 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.axonframework/axon-core -->
+		<!-- https://mvnrepository.com/artifact/org.axonframework/axon -->
 		<dependency>
 			<groupId>org.axonframework</groupId>
-			<artifactId>axon-core</artifactId>
-			<version>0.7</version>
+			<artifactId>axon</artifactId>
+			<version>2.4.2</version>
+			<type>pom</type>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -47,9 +49,8 @@
 		<dependency>
 			<groupId>org.axonframework</groupId>
 			<artifactId>axon-test</artifactId>
-			<version>0.7</version>
+			<version>2.4.2</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 </project>
