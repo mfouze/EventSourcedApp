@@ -5,19 +5,19 @@ import org.axonframework.commandhandling.annotation.TargetAggregateIdentifier;
 public class CreateToDoItemCommand {
 
 	@TargetAggregateIdentifier
-	private final String toDoId;
+	private final String todoId;
 	private final String description;
 
 
-	public CreateToDoItemCommand(String toDoId, String description) {
+	public CreateToDoItemCommand(String todoId, String description) {
 		super();
-		this.toDoId = toDoId;
+		this.todoId = todoId;
 		this.description = description;
 	}
 
 
 	public String getToDoId() {
-		return toDoId;
+		return todoId;
 	}
 
 
