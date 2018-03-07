@@ -1,4 +1,4 @@
-package fr.dataScale.entities;
+package fr.dataScale.commandhandler;
 
 import org.axonframework.commandhandling.annotation.CommandHandler;
 import org.axonframework.eventhandling.annotation.EventHandler;

@@ -10,7 +10,7 @@ import fr.dataScale.api.CreateToDoItemCommand;
 import fr.dataScale.api.MarkCompletedCommand;
 import fr.dataScale.api.ToDoItemCompletedEvent;
 import fr.dataScale.api.ToDoItemCreatedEvent;
-import fr.dataScale.entities.ToDoItem;
+import fr.dataScale.commandhandler.ToDoItem;
 
 public class ToDoItemTest {
 	private FixtureConfiguration fixture;
