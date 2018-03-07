@@ -16,7 +16,7 @@ public class CreateToDoItemCommand {
 	}
 
 
-	public String getToDoId() {
+	public String getTodoId() {
 		return todoId;
 	}
 
