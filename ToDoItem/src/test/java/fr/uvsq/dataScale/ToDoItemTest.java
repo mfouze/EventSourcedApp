@@ -6,11 +6,11 @@ import org.axonframework.test.Fixtures;
 import org.junit.Before;
 import org.junit.Test;
 
-import fr.dataScale.api.CreateToDoItemCommand;
-import fr.dataScale.api.MarkCompletedCommand;
-import fr.dataScale.api.ToDoItemCompletedEvent;
-import fr.dataScale.api.ToDoItemCreatedEvent;
-import fr.dataScale.commandhandler.ToDoItem;
+import fr.uvsq.dataScale.api.CreateToDoItemCommand;
+import fr.uvsq.dataScale.api.MarkCompletedCommand;
+import fr.uvsq.dataScale.api.ToDoItemCompletedEvent;
+import fr.uvsq.dataScale.api.ToDoItemCreatedEvent;
+import fr.uvsq.dataScale.commandhandler.ToDoItem;
 
 public class ToDoItemTest {
 	private FixtureConfiguration fixture;

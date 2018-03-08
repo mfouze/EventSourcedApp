@@ -1,4 +1,4 @@
-package fr.dataScale.api;
+package fr.uvsq.dataScale.api;
 
 public class ToDoItemCreatedEvent {
 	

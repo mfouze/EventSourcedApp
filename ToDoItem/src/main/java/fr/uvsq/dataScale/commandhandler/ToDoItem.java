@@ -1,14 +1,14 @@
-package fr.dataScale.commandhandler;
+package fr.uvsq.dataScale.commandhandler;
 
 import org.axonframework.commandhandling.annotation.CommandHandler;
 import org.axonframework.eventhandling.annotation.EventHandler;
 import org.axonframework.eventsourcing.annotation.AbstractAnnotatedAggregateRoot;
 import org.axonframework.eventsourcing.annotation.AggregateIdentifier;
 
-import fr.dataScale.api.CreateToDoItemCommand;
-import fr.dataScale.api.MarkCompletedCommand;
-import fr.dataScale.api.ToDoItemCompletedEvent;
-import fr.dataScale.api.ToDoItemCreatedEvent;
+import fr.uvsq.dataScale.api.CreateToDoItemCommand;
+import fr.uvsq.dataScale.api.MarkCompletedCommand;
+import fr.uvsq.dataScale.api.ToDoItemCompletedEvent;
+import fr.uvsq.dataScale.api.ToDoItemCreatedEvent;
 
 public class ToDoItem extends AbstractAnnotatedAggregateRoot {
 

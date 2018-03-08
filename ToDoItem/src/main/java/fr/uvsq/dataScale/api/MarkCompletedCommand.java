@@ -1,4 +1,4 @@
-package fr.dataScale.api;
+package fr.uvsq.dataScale.api;
 
 import org.axonframework.commandhandling.annotation.TargetAggregateIdentifier;
 
