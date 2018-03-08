@@ -16,11 +16,20 @@
 		aggregate-type="fr.uvsq.dataScale.commandhandler.ToDoItem" repository="toDoRepository"
 		command-bus="commandBus" />
 
-	<axon:filesystem-event-store id="eventStore" base-dir="event" />
+	<axon:filesystem-event-store id="eventStore"
+		base-dir="event" />
 
 	<bean
 		class="org.axonframework.commandhandling.gateway.CommandGatewayFactoryBean">
 		<property name="commandBus" ref="commandBus" />
 	</bean>
+	<!-- The first tag is needed only once, regardless of the number of Event 
+		Handler beans you register. It tells Axon to automatically check all beans 
+		in the Application Context for @EventHandler and @CommandHandler annotations. 
+		This works very nicely in combination with Spring’s component scanning capability. 
+		The second tags simply creates an instance of the handler. Axon will detect 
+		the annotations and do the necessary. -->
+	<!-- <axon:annotation-config /> -->
+	<!-- <bean class="fr.uvsq.dataScale.eventhandling.ToDoEventHandler" /> -->
 
 </beans>
